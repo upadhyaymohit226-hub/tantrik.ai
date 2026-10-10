@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+chroma_db/
+faiss_index/
+*.ipynb_checkpoints/
+.streamlit/secrets.toml
