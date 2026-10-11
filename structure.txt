@@ -1,28 +1,27 @@
-resume-analyzer/
-├── .devcontainer/
-│   └── devcontainer.json
-├── requirements.txt
-├── .env.example
+tantrik.ai/
 ├── .gitignore
+├── devcontainer.json
 ├── README.md
+├── requirement.txt
+├── structure.txt
+├── Model/
+│   └── ml.py
 ├── genai/
-│   ├── __init__.py
 │   ├── config.py
-│   ├── embeddings.py          # Sentence-transformer wrapper
-│   ├── vector_store.py        # FAISS + Chroma
-│   ├── rag_pipeline.py        # RAG orchestration
-│   ├── llm_client.py          # OpenAI/Groq/Gemini wrapper
-│   ├── bullet_rewriter.py     # LLM bullet-point rewriting
-│   ├── cover_letter.py        # Cover letter generator
-│   ├── interview_questions.py # Bonus: interview Qs
-│   └── skill_gap.py           # Skill gap analysis
+│   ├── embeddings.py
+│   ├── vectorstore.py
+│   ├── RAG_pipeline.py
+│   ├── llm_client.py
+│   ├── bullet_rewriter.py
+│   ├── cover_letter.py
+│   └── skill_gap.py
 ├── data/
-│   ├── skill_docs/            # Your RAG knowledge base
-│   │   ├── python.txt
-│   │   ├── ml_ds.txt
-│   │   └── ...
-│   └── sample_jds/
+│   └── skill_docs/
+│       ├── python.txt
+│       ├── ml_ds.txt
+│       └── gen_ai_llm.txt
 ├── scripts/
-│   ├── ingest_docs.py         # Build vector DB
+│   ├── ingest_docs.py
 │   └── test_rag.py
-└── app.py                     # Streamlit UI
+└── ui/
+    └── aman.py
